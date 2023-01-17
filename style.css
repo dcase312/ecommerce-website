@@ -1,0 +1,237 @@
+/* General CSS starts here*/
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+
+
+*{
+    box-sizing:border-box
+}
+
+body{
+ background-color: rgb(237, 222, 203);
+ padding: 0;
+ margin: 0;
+}
+
+nav{
+    display:flex;
+    justify-content: center;
+}
+
+nav a{
+text-decoration: none;
+color: rgb(114, 147, 114);
+margin: 20px;
+font-size: 20px;
+}
+
+footer{
+    background-color: rgb(114, 147, 114);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+footer a{
+    color: rgb(237, 222, 203);
+    padding: 30px;
+}
+
+
+/* CSS for Home page starts here */
+
+.business-title{
+    display: flex;
+    color: rgb(114, 147, 114);
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 60px;
+    position: relative;
+    justify-content: center;
+} 
+
+
+.slideshow{
+    overflow: hidden;
+    height: 800px;
+   
+}
+
+
+.slideshow figure{
+    position: relative;
+    width: 300%;
+    margin: 0;
+    left: 0;
+    animation: 15s slideshow infinite;
+}
+
+.slideshow figure img{
+    float: left;
+    width: 33.33%;
+}
+
+@keyframes slideshow{
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%
+    }
+    45% {
+        left: -100%
+    }
+    50% {
+        left: -200%
+    }
+    70% {
+        left: -200%
+    }
+    
+    
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 30px;
+    color: rgb(114, 147, 114);
+    border: 10px double rgb(114, 147, 114);
+    padding: 10px;
+    margin: 100px auto;
+    max-width: 99.8%;
+    justify-content: center;
+}
+
+
+.center-grid-container{
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+    
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+    margin-top: 100px;
+    max-width: 90%;
+}
+
+.grid-card{
+    align-items: center;
+    max-width: 500px;
+}
+
+.card-image{
+    height: 300px;
+    width: 500px;
+}
+
+.content-title{
+    color: rgb(114, 147, 114);
+    font-family: 'Shadows Into Light Two';
+    font-size: 33px;
+}
+
+.content{
+    color: rgb(114, 147, 114);
+    font-size: 20px;
+}
+
+
+
+/*Product Page CSS Starts here*/
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+    max-width: 100%;
+    margin: 10px auto;
+    
+}
+
+.center-grid{
+    max-width: 90%;
+    margin: 100px auto;
+    
+}
+
+.product-card{
+   text-align: center;
+   width: 90%;
+   box-shadow: .3rem .3rem 2rem rgb(64, 60, 60);
+   padding-bottom: 15px;
+   
+}
+
+.product-img{
+    width: 100%;
+    height: auto;
+}
+
+
+.atc-button{
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.atc-button:hover {
+    background-color: rgb(114, 147, 114);
+    color: white;
+
+}
+
+.atc-button:active {
+  background-color: rgb(114, 147, 114);
+  box-shadow: 0 5px #665;
+  transform: translateY(4px);
+}
+
+/* Contact Form CSS starts here */
+
+
+.contact-form{
+    width: 600px;
+    height: 500px;
+    background-image: url(images/monstera-rain.jpeg);
+    padding: 10px;
+    margin: 100px auto;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+
+    
+}
+
+form{
+    width: 350px;
+    margin: -40px 100px;
+    text-align: center;
+}
+
+.contact-title{
+    color: white;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 40px;
+}
+
+.input-label{
+    color: white;
+}
+
+.form-section{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    
+}
