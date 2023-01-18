@@ -19,30 +19,70 @@ nav{
 
 nav a{
 text-decoration: none;
-color: rgb(114, 147, 114);
+color: rgb(83, 104, 83);
 margin: 20px;
-font-size: 20px;
+font-size: 23px;
 }
 
 footer{
-    background-color: rgb(114, 147, 114);
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    background-color: rgb(83, 104, 83);
     margin-top: 100px;
+    text-align: center;
+    padding: 10px;
 }
 
 footer a{
     color: rgb(237, 222, 203);
-    padding: 30px;
+    padding: 20px;
 }
+
+.newsletter-title{
+    display: flex;
+    color: rgb(237, 222, 203);
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 38px;
+    position: relative;
+    justify-content: center;
+}
+
+.newsletter-description{
+    color: rgb(237, 222, 203);
+    font-size: 22px;
+}
+
+.newsletter-subscription{
+    margin-bottom: 50px;
+}
+
+.footer-links{
+    margin-bottom: 50px;
+}
+
+.subscribe-field{
+    height: 40px;
+    width: 300px;
+}
+
+.subscribe-button{
+    padding: 5px;
+    height: 40px;
+    margin-left: -5px;
+    color: black;
+    
+}
+
+.subscribe-button:hover {
+    background-color: rgb(237, 222, 203);
+    color: black;
+}
+
 
 
 /* CSS for Home page starts here */
 
 .business-title{
     display: flex;
-    color: rgb(114, 147, 114);
+    color: rgb(83, 104, 83);
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 60px;
     position: relative;
@@ -62,7 +102,7 @@ footer a{
     width: 300%;
     margin: 0;
     left: 0;
-    animation: 15s slideshow infinite;
+    animation: 10s slideshow infinite;
 }
 
 .slideshow figure img{
@@ -98,9 +138,9 @@ footer a{
     justify-content: center;
     margin-top: 100px;
     font-family: 'Shadows Into Light Two', cursive;
-    font-size: 30px;
-    color: rgb(114, 147, 114);
-    border: 10px double rgb(114, 147, 114);
+    font-size: 40px;
+    color: rgb(83, 104, 83);
+    border: 10px double rgb(83, 104, 83);
     padding: 10px;
     margin: 100px auto;
     max-width: 99.8%;
@@ -134,14 +174,14 @@ footer a{
 }
 
 .content-title{
-    color: rgb(114, 147, 114);
+    color: rgb(83, 104, 83);
     font-family: 'Shadows Into Light Two';
-    font-size: 33px;
+    font-size: 35px;
 }
 
 .content{
-    color: rgb(114, 147, 114);
-    font-size: 20px;
+    color: rgb(83, 104, 83);
+    font-size: 22px;
 }
 
 
@@ -171,6 +211,19 @@ footer a{
    
 }
 
+.product-description{
+    padding: 10px;
+    font-size: 22px;
+}
+
+.product-title{
+    font-size: 28px;
+}
+
+.product-price{
+    font-size: 22px;
+}
+
 .product-img{
     width: 100%;
     height: auto;
@@ -183,14 +236,14 @@ footer a{
 }
 
 .atc-button:hover {
-    background-color: rgb(114, 147, 114);
+    background-color: rgb(83, 104, 83);
     color: white;
 
 }
 
 .atc-button:active {
-  background-color: rgb(114, 147, 114);
-  box-shadow: 0 5px #665;
+  background-color: rgb(83, 104, 83);
+  box-shadow: 0 5px rgb(143, 143, 121);
   transform: translateY(4px);
 }
 
@@ -199,7 +252,7 @@ footer a{
 
 .contact-form{
     width: 600px;
-    height: 500px;
+    height: 550px;
     background-image: url(images/monstera-rain.jpeg);
     padding: 10px;
     margin: 100px auto;
@@ -218,11 +271,12 @@ form{
 .contact-title{
     color: white;
     font-family: 'Shadows Into Light Two', cursive;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .input-label{
     color: white;
+    /* font-size: 20px; */
 }
 
 .form-section{
@@ -235,3 +289,94 @@ form{
     margin-bottom: 20px;
     
 }
+
+
+/* media query for tablet */
+
+@media screen and (min-width: 481px) and (max-width: 799px) {
+    /* media query css for home page */
+    .business-title{
+        font-size: 50px;
+    }
+
+
+    .slideshow{
+        height: 400px;
+    }
+
+    .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-image{
+        width: 400px;
+        height: 240px;
+    }
+
+    .grid-card{
+        width: 400px;
+    }
+
+
+    /* media query css for product page */
+
+    .product-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-card{
+        margin: 5px auto;
+    }
+
+
+    /* media query css for contact page */
+
+    .contact-form{
+        width: 450px;
+        display: flex;
+    }    
+}
+
+
+/* media query for desktop */
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    /* media inquiry css for home page */
+
+    .slideshow{
+        height: 400px;
+    }
+
+    .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-image{
+        width: 500px;
+        height: 300px;
+    }
+
+    .grid-card{
+        width: 500px;
+    }
+
+    /* media query css for product page */
+
+    .product-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-card{
+        margin: 5px auto;
+    }
+
+    .atc-button{
+        font-size: 16px;
+    }
+
+
+
+
+
+}
+
