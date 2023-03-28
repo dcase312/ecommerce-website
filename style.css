@@ -21,7 +21,7 @@ nav a{
 text-decoration: none;
 color: rgb(83, 104, 83);
 margin: 20px;
-font-size: 23px;
+font-size: 22px;
 }
 
 footer{
@@ -291,6 +291,91 @@ form{
 }
 
 
+/* media query for phone */
+@media screen and (max-width: 480px){
+
+    /* media query for home page */
+.business-title{
+    font-size: 40px;
+}
+nav a{
+    font-size: 15px;
+}
+.slideshow{
+    height: 250px;
+}
+.about{
+    font-size: 25px;
+}
+.grid-container{
+    display: flex;
+    flex-direction: column;
+}
+.grid-card{
+    max-width: 400px;
+}
+.card-image{
+    width: 100%;
+    height: auto;
+}
+.content-title{
+    font-size: 25px;
+}
+.content{
+    font-size: 18px;
+}
+.newsletter-title{
+    font-size: 25px;
+}
+.newsletter-description{
+    font-size: 15px;
+}
+.newsletter-subscription{
+    margin-bottom: 0;
+}
+.footer-links{
+    margin-bottom: 10px;
+}
+
+/* media query for products page */
+.product-grid{
+    display: flex;
+    flex-direction: column;
+}
+.product-card{
+    margin: 0 30px;
+    width: auto;
+}
+.product-title{
+    font-size: 25px;
+}
+.product-price, .product-description{
+    font-size: 18px;
+}
+
+/* media query for contact page */
+.form-box{
+    margin: 10px;
+}
+.contact-form{
+    width: 350px;
+    height: auto;
+}
+form{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.form-box{
+    width: auto;
+    
+}
+.contact-title{
+    font-size: 35px;
+}
+}
+
+
 /* media query for tablet */
 
 @media screen and (min-width: 481px) and (max-width: 799px) {
@@ -299,6 +384,9 @@ form{
         font-size: 50px;
     }
 
+    nav a{
+        font: 18px;
+    }
 
     .slideshow{
         height: 400px;
